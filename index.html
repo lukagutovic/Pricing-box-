@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <title>Pricing-box</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrap-all">
+    <div class="main-wrapper">
+      <div class="free-trail-container">
+        <p>7-DAY FREE TRAIL</p>
+      </div>
+      <h1 class="heading">Premium Plan</h1>
+      <div class="prices-container">
+        <div class="prices-wrapper">
+          <p id="lower-price" class="lower-price">$2.99 / mo *</p>
+          <p onclick="switcher()" class="switch-output" id="output">$3.99 / mo *</p>
+          <p id="bigger-price" class="bigger-price object">$3.99 / mo *</p>
+        </div>
+      </div>
+      <div class="switcher-wrapper">
+        <p onclick="" id="switcher-1" class="switcher-1 active">Pay annually</p>
+        <label class="switch-controll">
+          <input id="switcher-input" type="checkbox" onclick="switcher()">
+          <span class="slider round" onclick="switcher()"></span>
+        </label>
+        <p onclick="switcher()" id="switcher-2" class="switcher-2">Switch ON</p>
+      </div>
+      <div class="card-wrapper">
+        <div class="card-item">
+          <img src="./images/star.png" alt="Star">
+          <span>Email Newsletter</span>
+        </div>
+        <div class="card-item">
+          <img src="./images/star.png" alt="Star">
+          <span>1 Email a Day</span>
+        </div>
+        <div class="card-item">
+          <img src="./images/star.png" alt="Star">
+          <span>Every Day of Month</span>
+        </div>
+        <div class="card-item">
+          <img src="./images/star.png" alt="Star">
+          <span>Handpicked Cute Animals</span>
+        </div>
+        <div class="card-item">
+          <img src="./images/star.png" alt="Star">
+          <span>Images, Videos and Gifts</span>
+        </div>
+      </div>
+      <div class="bottom-wrapper">
+        <button>Start now</button>
+        <p>30-Day Money Back Guarantee</p>
+      </div>
+    </div>
+    <div class="footer-text">
+      <p>* That's $29.99 per year (37% off).</p>
+      <p>When billed month-to-month, Premium is $3.99 per month</p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
